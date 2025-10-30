@@ -23,8 +23,6 @@
 | interface | 동적 타입 규약 | `type Writer interface { Write([]byte)(int,error) }` |
 | error | 내장 인터페이스 | `if err != nil { ... }` |
 
----
-
 ## 2. 연산자와 비교식
 
 | 분류 | 기호 | 예시 |
@@ -36,8 +34,6 @@
 | 논리 | `&& || !` | - |
 | 증감 | `i++ i--` | 독립문으로만 사용 가능 |
 | 주소/역참조 | `&x`, `*p` | - |
-
----
 
 ## 3. 출력 포맷 (fmt 패키지)
 
@@ -55,8 +51,6 @@
 | `%v` | 자동 포맷 (debug용) |
 | `%T` | 타입 표시 |
 
----
-
 ## 4. 슬라이스 / 배열 / 맵 기본
 
 ```
@@ -71,8 +65,6 @@ m["c"] = 3
 delete(m, "b")
 for k, v := range m { fmt.Println(k, v) }
 ```
-
----
 
 ## 5. 함수와 에러 처리
 
@@ -92,8 +84,6 @@ if err != nil {
 }
 ```
 
----
-
 ## 6. defer, panic, recover
 
 ```
@@ -110,8 +100,6 @@ func main() {
 	panic("치명적 오류 발생!") // 강제 중단 → recover로 복구 가능
 }
 ```
-
----
 
 ## 7. 구조체와 메서드
 
@@ -133,8 +121,6 @@ func main() {
 }
 ```
 
----
-
 ## 8. import와 package 구조
 
 - 모든 Go 파일은 `package`로 시작한다.  
@@ -148,8 +134,6 @@ func main() {
   go get github.com/gin-gonic/gin
   ```
 
----
-
 ## 9. Go의 철학 요약
 
 - 변수는 선언 후 반드시 사용해야 한다.  
@@ -158,9 +142,7 @@ func main() {
 - 가비지 컬렉션 있음 (Rust처럼 소유권 시스템 없음).  
 - 간결함을 최우선으로 하는 설계.
 
----
-
-## 10. 이걸로 커버 가능한 영역
+## 10. Go의 활용 영역
 
 - CLI 프로그램 (`fmt`, `os`, `flag`)
 - 파일 IO (`os.Open`, `os.WriteFile`)
@@ -168,8 +150,6 @@ func main() {
 - JSON 직렬화 (`encoding/json`)
 - Goroutine / channel (`go func()`, `make(chan int)`)
 - 기본 자료구조 / 알고리즘 구현
-
----
 
 ## 11. 핵심 정리 템플릿
 
