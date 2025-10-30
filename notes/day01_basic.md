@@ -53,7 +53,7 @@
 
 ## 4. 슬라이스 / 배열 / 맵 기본
 
-```
+```go
 nums := []int{1,2,3}        // 슬라이스
 nums = append(nums, 4, 5)   // 요소 추가
 
@@ -68,7 +68,7 @@ for k, v := range m { fmt.Println(k, v) }
 
 ## 5. 함수와 에러 처리
 
-```
+```go
 func divide(a, b int) (int, error) {
 	if b == 0 {
 		return 0, fmt.Errorf("division by zero")
@@ -86,7 +86,7 @@ if err != nil {
 
 ## 6. defer, panic, recover
 
-```
+```go
 func main() {
 	defer fmt.Println("끝!") // 함수 종료 시 실행
 	fmt.Println("시작")
@@ -103,7 +103,7 @@ func main() {
 
 ## 7. 구조체와 메서드
 
-```
+```go
 type Account struct {
 	Name    string
 	Balance int
