@@ -153,7 +153,7 @@ func main() {
 
 ## 11. 핵심 정리 템플릿
 
-```md
+```bash
 # 핵심 문법
 - 변수 선언: `x := 10`, `var x int = 10`
 - 함수: `func add(a,b int) int`
