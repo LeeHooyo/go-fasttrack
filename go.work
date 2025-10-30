@@ -1,0 +1,9 @@
+go 1.25.3
+
+use (
+	./labs/basic_syntax
+	./labs/goroutines
+	./labs/http_server
+	./labs/rest_api
+	./projects/mini_wallet
+)
