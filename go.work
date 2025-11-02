@@ -5,5 +5,6 @@ use (
 	./labs/goroutines
 	./labs/http_server
 	./labs/rest_api
+	./labs/select_demo
 	./projects/mini_wallet
 )
